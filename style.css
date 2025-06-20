@@ -1,4 +1,70 @@
-html {
-  height: 100%;
-  width: 100%;
+/* Reset and basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f4f6f8;
+  color: #333;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #007acc;
+}
+
+header p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+/* Glossary Section */
+#glossary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Glossary Cards */
+.term-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.term-card:hover {
+  transform: translateY(-4px);
+}
+
+.term-card h2 {
+  font-size: 1.4rem;
+  color: #007acc;
+  margin-bottom: 10px;
+}
+
+.term-card p {
+  font-size: 1rem;
+  color: #444;
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: black;
 }
